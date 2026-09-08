@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vivelia Hellenic Harvest &amp; Estate | Private Concierge John Neata</title>
+<!-- Google Fonts: Playfair Display, Cormorant Garamond & Montserrat -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Montserrat:wght@300;400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 with Forms & Container-Queries plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Custom Configuration -->
+<script data-purpose="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            vivelia: {
+              gold: '#C5A059',
+              goldLight: '#E8D49E',
+              goldDark: '#99732B',
+              oliveDark: '#17241A',
+              oliveForest: '#1F3025',
+              oliveMuted: '#4F5E4B',
+              cream: '#FAF7F0',
+              creamSoft: '#F4EEE0',
+              charcoal: '#1A1C19'
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'serif'],
+            cormorant: ['"Cormorant Garamond"', 'serif'],
+            sans: ['Montserrat', 'sans-serif']
+          },
+          boxShadow: {
+            'gold-glow': '0 10px 30px -5px rgba(197, 160, 89, 0.25)',
+            'card-luxury': '0 20px 40px -15px rgba(23, 36, 26, 0.08)'
+          }
+        }
+      }
+    }
+  </script>
+<!-- BEGIN: Custom Styles -->
+<style data-purpose="custom-typography">
+    .font-prestige-title {
+      font-family: 'Playfair Display', serif;
+      letter-spacing: 0.03em;
+    }
+    .font-editorial {
+      font-family: 'Cormorant Garamond', serif;
+    }
+    .font-refined {
+      font-family: 'Montserrat', sans-serif;
+      letter-spacing: 0.05em;
+    }
+  </style>
+<style data-purpose="lux-decorations">
+    /* Metallic gold gradient shimmer */
+    .bg-metallic-gold {
+      background: linear-gradient(135deg, #ECCF8D 0%, #C5A059 50%, #9F7932 100%);
+    }
+    .text-metallic-gold {
+      background: linear-gradient(135deg, #F3E0B5 0%, #D4AF37 50%, #B8860B 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .border-gold-accent {
+      border-color: rgba(197, 160, 89, 0.35);
+    }
+    /* Smooth transitions for theme switcher */
+    .theme-transition {
+      transition: all 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+  </style>
+<!-- END: Custom Styles -->
+</head>
+<body class="bg-[#FAF7F0] text-[#1A1C19] font-sans antialiased selection:bg-[#C5A059] selection:text-white">
+<!-- BEGIN: TopUtilityPrestigeBar -->
+<aside class="bg-[#141C15] text-[#FAF7F0] text-xs py-2 px-4 border-b border-[#C5A059]/20" data-purpose="prestige-utility-bar">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-2">
+<!-- Harvest & Cold-Chain Indicator -->
+<div class="flex items-center gap-4 text-[11px] font-refined">
+<span class="inline-flex items-center gap-1.5 text-[#E8D49E]">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+          Single-Grove Harvest 2024 • Peloponnese &amp; Megara, Greece
+        </span>
+<span class="hidden sm:inline text-white/40">|</span>
+<span class="hidden sm:inline text-white/70">Certified Nitrogen-Flushed • Dark Canister Shield</span>
+</div>
+<!-- Language, Direct Concierge & Phone -->
+<div class="flex items-center gap-5 text-[11px] font-refined">
+<div class="flex items-center gap-1 text-white/80">
+<span class="text-[#C5A059] font-semibold">EN</span>
+<span class="text-white/30">/</span>
+<span class="hover:text-[#E8D49E] cursor-pointer transition">ES</span>
+</div>
+<span class="text-white/40">|</span>
+<!-- John Neata Hotline -->
+<a class="flex items-center gap-1.5 text-[#E8D49E] hover:text-white transition font-medium" href="tel:+13016594136">
+<svg class="w-3.5 h-3.5 text-[#C5A059]" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+          Direct Concierge John Neata: <strong class="text-white tracking-wider">+1 (301) 659-4136</strong>
+</a>
+</div>
+</div>
+</aside>
+<!-- END: TopUtilityPrestigeBar -->
+<!-- BEGIN: MainHeader -->
+<header class="sticky top-0 z-40 bg-[#FAF7F0]/95 backdrop-blur-md border-b border-[#C5A059]/25">
+<nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+<!-- Brand Logo Section -->
+<a class="flex items-center gap-3 group" href="#">
+<div class="w-10 h-10 rounded-full bg-[#1F3025] flex items-center justify-center border border-[#C5A059] shadow-sm">
+<svg class="w-6 h-6 text-[#C5A059]" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M12 2L9 8h6l-3-6zm0 14c-4 0-7 3-7 6h14c0-3-3-6-7-6zm-7-4a7 7 0 0114 0" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"></path>
+</svg>
+</div>
+<div class="flex flex-col">
+<span class="font-prestige-title text-2xl font-bold tracking-widest text-[#17241A] group-hover:text-[#99732B] transition">VIVELIA</span>
+<span class="text-[9px] tracking-[0.25em] uppercase text-[#4F5E4B] font-semibold -mt-1">Hellenic Harvest • Greece</span>
+</div>
+</a>
+<!-- Desktop Navigation Links -->
+<ul class="hidden lg:flex items-center space-x-8 text-xs font-semibold uppercase tracking-widest text-[#1F3025]">
+<li><a class="hover:text-[#99732B] transition" href="#estate">The Estate</a></li>
+<li><a class="text-[#99732B] font-bold border-b border-[#C5A059] pb-0.5" href="#suite-switcher">Product Suite</a></li>
+<li><a class="hover:text-[#99732B] transition" href="#science">Laboratory &amp; Acidity</a></li>
+<li><a class="hover:text-[#99732B] transition" href="#concierge">John Neata Concierge</a></li>
+<li><a class="hover:text-[#99732B] transition" href="#collection">Michelin Wholesale</a></li>
+</ul>
+<!-- Action Group -->
+<div class="flex items-center gap-3">
+<!-- Direct WhatsApp button -->
+<a class="hidden sm:inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold uppercase tracking-wider text-[#1F3025] bg-[#FAF7F0] border border-[#C5A059] rounded-sm hover:bg-[#C5A059] hover:text-white transition shadow-sm" href="https://wa.me/13016594136?text=Hello%20John%20Neata,%20I%20am%20interested%20in%20the%20Vivelia%20Greek%20Extra%20Virgin%20Olive%20Oil%20collection." rel="noopener noreferrer" target="_blank">
+<span>Consult John</span>
+</a>
+<!-- Tasting Cellar CTA -->
+<a class="inline-flex items-center gap-1.5 px-4 py-2 text-xs font-semibold uppercase tracking-widest text-white bg-[#1F3025] hover:bg-[#C5A059] rounded-sm transition shadow-md" href="#concierge">
+<span>Reserve Tasting</span>
+</a>
+</div>
+</nav>
+</header>
+<!-- END: MainHeader -->
+<main>
+<!-- BEGIN: HeroProductSuiteSwitcher -->
+<section class="relative bg-gradient-to-b from-[#17241A] to-[#203425] text-[#FAF7F0] pt-12 pb-20 overflow-hidden border-b border-[#C5A059]/30" id="suite-switcher">
+<!-- Subtle Golden Ambient Overlay -->
+<div class="absolute -top-40 -right-40 w-96 h-96 bg-[#C5A059]/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-40 -left-40 w-96 h-96 bg-[#C5A059]/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+<!-- Header & Sommelier Attribution -->
+<div class="text-center max-w-3xl mx-auto mb-10">
+<div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full border border-[#C5A059]/40 bg-[#FAF7F0]/5 text-[#E8D49E] text-xs uppercase tracking-widest mb-3">
+<span>Private Sommelier Procurement</span>
+<span>•</span>
+<span class="text-white font-medium">Curated by John Neata</span>
+</div>
+<h1 class="font-prestige-title text-3xl sm:text-5xl lg:text-6xl font-normal leading-tight text-white">
+            Ancient Peloponnese Soil. <br/>
+<span class="italic font-editorial text-metallic-gold font-light">Single-Grove Purity.</span>
+</h1>
+<p class="mt-4 text-sm sm:text-base text-gray-300 font-light max-w-2xl mx-auto leading-relaxed">
+            Ultra-low 0.28% acidity, cold-extracted in Greece under 24°C within 4 hours of harvest. Packaged in light-impenetrable canisters preserving polyphenols for high gastronomy.
+          </p>
+</div>
+<!-- 4-Product Interactive Theme Switcher Bar -->
+<div class="bg-[#121A14]/80 p-1.5 rounded-xl border border-[#C5A059]/30 backdrop-blur-md shadow-2xl max-w-5xl mx-auto mb-10" data-purpose="interactive-theme-switcher">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-1.5" role="tablist">
+<!-- Tab 1: 3L Golden Brass Canister -->
+<button aria-selected="true" class="suite-tab-btn flex flex-col p-3 text-left rounded-lg transition-all duration-300 border border-[#C5A059] bg-[#C5A059]/20 text-white shadow-sm" id="tab-btn-canister" onclick="switchSuiteProduct('canister')" role="tab">
+<span class="text-[10px] uppercase font-bold tracking-widest text-[#E8D49E] mb-1 flex items-center justify-between">
+                Flagship Canister
+                <span class="w-2 h-2 rounded-full bg-[#C5A059]"></span>
+</span>
+<span class="text-xs font-semibold">3-Liter Brass Canister</span>
+<span class="text-[11px] text-gray-300 font-light">London Gold Medalist • $60</span>
+</button>
+<!-- Tab 2: Dark Glass 500ml -->
+<button aria-selected="false" class="suite-tab-btn flex flex-col p-3 text-left rounded-lg transition-all duration-300 border border-transparent hover:border-white/20 text-gray-400 hover:text-white" id="tab-btn-reserve" onclick="switchSuiteProduct('reserve')" role="tab">
+<span class="text-[10px] uppercase font-bold tracking-widest text-emerald-400/80 mb-1 flex items-center justify-between">
+                Ultra Oleocanthal
+                <span class="w-2 h-2 rounded-full bg-emerald-500/40"></span>
+</span>
+<span class="text-xs font-semibold">500ml Dark Reserve Glass</span>
+<span class="text-[11px] text-gray-300 font-light">Estate Monovarietal • $34</span>
+</button>
+<!-- Tab 3: Botanical Infused -->
+<button aria-selected="false" class="suite-tab-btn flex flex-col p-3 text-left rounded-lg transition-all duration-300 border border-transparent hover:border-white/20 text-gray-400 hover:text-white" id="tab-btn-botanical" onclick="switchSuiteProduct('botanical')" role="tab">
+<span class="text-[10px] uppercase font-bold tracking-widest text-amber-400/80 mb-1 flex items-center justify-between">
+                Artisan Herbs
+                <span class="w-2 h-2 rounded-full bg-amber-500/40"></span>
+</span>
+<span class="text-xs font-semibold">Aegean Rosemary &amp; Chili</span>
+<span class="text-[11px] text-gray-300 font-light">Simultaneous Press • $28</span>
+</button>
+<!-- Tab 4: Cask Aged Balsamic -->
+<button aria-selected="false" class="suite-tab-btn flex flex-col p-3 text-left rounded-lg transition-all duration-300 border border-transparent hover:border-white/20 text-gray-400 hover:text-white" id="tab-btn-balsamic" onclick="switchSuiteProduct('balsamic')" role="tab">
+<span class="text-[10px] uppercase font-bold tracking-widest text-rose-400/80 mb-1 flex items-center justify-between">
+                Megara 5-Year
+                <span class="w-2 h-2 rounded-full bg-rose-500/40"></span>
+</span>
+<span class="text-xs font-semibold">Oak-Cask Greek Balsamic</span>
+<span class="text-[11px] text-gray-300 font-light">Organic Kalamata Must • $38</span>
+</button>
+</div>
+</div>
+<!-- Dynamic Product Display Container -->
+<div class="theme-transition bg-[#FAF7F0] text-[#17241A] rounded-2xl p-6 sm:p-10 lg:p-12 shadow-2xl border-2 border-[#C5A059]/40 relative" id="product-suite-canvas">
+<!-- Content: Flagship 3L Canister (Default Active) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center" id="suite-view-canister">
+<!-- Left: High Resolution Uploaded Images -->
+<div class="lg:col-span-6 relative flex flex-col items-center">
+<div class="relative w-full rounded-xl overflow-hidden shadow-2xl border border-[#C5A059]/30 bg-stone-900 group">
+<img alt="Vivelia Extra Virgin Olive Oil 3L Golden Brass Canister in Greek Olive Grove" class="w-full h-[380px] sm:h-[460px] object-cover object-center transition-transform duration-700 group-hover:scale-105" id="canister-main-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrCFwJ5mdXH3feKa1zCAGpX2TTbIDK9_mS0nqMvwCEWXtNR5hJbK8UwOjseIshq6W7hcWzPwOkudaeXa7sLZL0fEmVoYNqpVuhaiq4ts_PyFWw2Ey-PLwAUx8jTnYpFNGrRUQ1OQPV1dGaVGvRBsbOVR9KYwCipaqud9oqd-Eg5fbYeMrwV5_BqMF4_ewUGQ4gQpvaZPrRHnh80g3NsAAdFB5v7h6U6BG80G8_JgLLwqCFGOPrjR_HCZxjROzhXShGG40"/>
+<div class="absolute bottom-3 left-3 bg-[#17241A]/90 backdrop-blur-md px-3 py-1.5 rounded text-white text-[11px] font-refined flex items-center gap-2 border border-[#C5A059]/40">
+<span class="w-2 h-2 rounded-full bg-yellow-400"></span>
+                  Official London &amp; Great Taste 2018 Gold Winner
+                </div>
+</div>
+<!-- Secondary Thumbnail Switcher for the Canister View -->
+<div class="flex items-center gap-3 mt-4">
+<button class="canister-thumb active ring-2 ring-[#C5A059] rounded overflow-hidden w-16 h-16 opacity-100 transition" onclick="changeCanisterImage('https://lh3.googleusercontent.com/aida-public/AB6AXuDbr7qNYpyif6D-BXiBOXGPzslLFOf2v47paEDPTt5x7PGAHqQTkbHYry0UjlJPdOhhSqVyUIpCoMMoJFBi8h6XA-rCgTBmrZd6y5JD9uuuI4IfhFmg_RGB33MUxOzwHs2FmbabDHhoREWTd0fKCRbizrZPn5M3J3JuR23PmSmo9Ko2pZRvw5a9RQTzGPLjQPTRVLLt8Bt-PoXuA_JrafT0K3ze2hPS568T4V4j-nwGSTU2Gp8rw9dz3DKavxSS-YW2Qdc', this)">
+<img alt="Grove Presentation" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBzKFoDhw4lj-RThdBzYPO9y92mldEhWtyb9SfKqMZdK0DTPG6GEyYpq2ZdM7tG-M2uypQU_BpUM1o8E4w1d8NgUlfj1so_pJSlLAGKs1q3gRmrktl8bTMW_GlW8X_4iYaoka28IPeMVqZI3iKVEV-9-rHGleXsV6eYpYukP_R-2OEutJz-vBHPwX1D6VsFN6bm4VKsIp1Ggwrbo4mul9twzEn4WN2kILxkZnq8v3vup2a1A-lzWr9D4F8NIGP3BUF4_c"/>
+</button>
+<button class="canister-thumb rounded overflow-hidden w-16 h-16 opacity-60 hover:opacity-100 transition" onclick="changeCanisterImage('https://lh3.googleusercontent.com/aida-public/AB6AXuCbdLabEsD5BsVvbLf9f_v-4sEDrCQC4UGzQ4RdcMm7c_GKC2XjUzt2onM8L7M-UHzZ7yJK3DHbdfhwEfIBd6j243uEUEjU6vzTHhwu3bZC-83InvD2mAf07sCvjNySeahAE06Crf6fEW_c7fqUy_w6bUKHQteZ79x0E6ndkcmHdc98hIGYW42TnchVigVhQZxmwQGoIrebj0td0H9-fijItDBNGOz_yvCxpTQrgujJz_A6yih8LeR4WSGN4bYr3o06__Y', this)">
+<img alt="Angled Canister with Nutrition Profile" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVxgZpdMShgXZxhnlyQpGIkbNvcopRoELly5V4RlO6Hp19f31aucVAacLA_3YPNphkBBukiqLoyj5DXjps8-ku-N1Z33Zft5pWgNk5yavoiwc_BTZgDyUQyqhKboZgcy9kT2lFDVwqOl2o4Y9l8umnQinHe5YWdffzTOnZ17-AqzXFOJntOgrtLmKAa_YajBhSvZAbqItL5ZG-yol1SX4iVJydfzxCZDLP8NhYgZv8zHRqjcsQ-wIQ3q_PK3vYGkPNNTg"/>
+</button>
+<button class="canister-thumb rounded overflow-hidden w-16 h-16 opacity-60 hover:opacity-100 transition" onclick="changeCanisterImage('https://lh3.googleusercontent.com/aida-public/AB6AXuDbjoMKRugWU7EmpYXceRr1IPyQ8eYgB7oOjQRW-EeS0_bf1tt_RGARbLde-oAVrdtXrKCDMdPT92BYPhggGA2TK_1MiAdfJ470VBRYEKc5_2aQlPAsDjE9ROnwDFYkh0sK_whnp3NxtdE-qRZKxAW4X9pd9qXrnR-qAh9D2asVjxsNOT51d6KCFZourF22v77V4VR0i-Xa6jFNheIb6W2T7GGNXq6kWbqv99P1PANRrmadYaQfv2FJZB2_Pgkh3BxGM-I', this)">
+<img alt="Dual Front and Back Nutrition Display" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZnveGIZC2uXECA449YuaQrAbxigIHl3O7ChASclvsBlPJDyHPkly_-CH9_yr02rBmyYaUIy0WBLa-rwHufh8G-Tb0A2HdxlrDFrq-pbDU0xMm_gw-jIiJuHWPzZtGBSI10dNH5g09FBM6JdDBb0T9fQmhcYbXneM-iKXgspqYLTrJMsfobIcmABQYN8-Pdm_Y--RGl0ND2gQ7k2fw5SeeuURI1qtllMuHyHP1hL5ow4FEA2dAAR1Mv17fPBWV0dpGiWE"/>
+</button>
+<button class="canister-thumb rounded overflow-hidden w-16 h-16 opacity-60 hover:opacity-100 transition" onclick="changeCanisterImage('https://lh3.googleusercontent.com/aida-public/AB6AXuBmDim2WNdHS8oY0ac0Y0kQpAn62TsE6ZqdJvAdAa-pJ0INm5MLC7TzIgWzfQP24zoAhLdLSKW4HpjI604SMlJ1q1_rAyCq-OretWmxNYfoVuUtJ-xuEWNC_1GV3HpHBudDfBRysoTA04N819ZdYXwhUoc33KrFPwewfGGD0oT2c2Ye6JQ6HoHtD0PRO3xv0jK0-yGHXT2SYFZOqrILiERpDGdzKx_8KQWVIDJerKPW5P4x0ylC2QRXlFAOetdJp_8dPPY', this)">
+<img alt="Flat Layout Studio Profile" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSWPEdCzNBSkImSzAJ7xj3c4XUtzCMm7uvtQdyk8PEU0OvJ8FhOezupxsvPzC4E3U494uQIweCiOV1NIYDrZcap_1bbmBvNCvq3vZzdKj4iu4ow1fXPWLlyYwLUWxLEn10_megy-K38Xp5J939aTW73jwhb9GV508ck5Y-z5DdOjXzkPzTkdQL92j0zUM6XV2QtezCwD9yW3iyexP1MgQL23YutBNKeWNEvOGmmBS5wJLmGZsooh_WMXRKefa6sl6JGbo"/>
+</button>
+</div>
+</div>
+<!-- Right: Product Narrative & Ordering Controls -->
+<div class="lg:col-span-6 flex flex-col justify-center space-y-6">
+<div class="space-y-2">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider bg-[#1F3025] text-[#E8D49E] rounded">100% Light Impenetrable UV Shield</span>
+<span class="text-xs text-stone-500 font-refined font-semibold">3 Liters (101.44 fl. oz)</span>
+</div>
+<h2 class="font-prestige-title text-3xl sm:text-4xl text-[#17241A] font-bold">
+                  Vivelia Signature 3-Liter Extra Virgin Olive Oil Brass Canister
+                </h2>
+<p class="text-xs uppercase tracking-widest text-[#99732B] font-semibold">
+                  Product of Peloponnese, Greece • Εξαιρετικό Παρθένο Ελαιόλαδο
+                </p>
+</div>
+<!-- Lab Physicochemical Metrics Pill Matrix -->
+<div class="grid grid-cols-3 gap-3 p-3 bg-stone-100/90 rounded-lg border border-stone-200">
+<div class="text-center">
+<span class="block text-[10px] text-stone-500 uppercase font-semibold">Acidity Rating</span>
+<span class="font-prestige-title text-base sm:text-lg font-bold text-[#17241A]">&lt; 0.28%</span>
+<span class="block text-[9px] text-stone-400 font-light">EU standard: 0.8%</span>
+</div>
+<div class="text-center border-x border-stone-300/80">
+<span class="block text-[10px] text-stone-500 uppercase font-semibold">Polyphenols</span>
+<span class="font-prestige-title text-base sm:text-lg font-bold text-[#99732B]">485 mg/kg</span>
+<span class="block text-[9px] text-stone-400 font-light">High Antioxidant</span>
+</div>
+<div class="text-center">
+<span class="block text-[10px] text-stone-500 uppercase font-semibold">Cold Press Temp</span>
+<span class="font-prestige-title text-base sm:text-lg font-bold text-[#17241A]">24°C</span>
+<span class="block text-[9px] text-stone-400 font-light">Within 4 Hours</span>
+</div>
+</div>
+<!-- Gastronomy Description -->
+<p class="text-sm text-stone-700 leading-relaxed font-light">
+                Crafted for culinary purists and Michelin-standard kitchens. The proprietary gold-embossed canister provides zero oxidation and zero photolysis. Equipped with an integrated non-drip retractable pour spout for effortless daily finishing.
+              </p>
+<!-- Price & Quantity Selector -->
+<div class="pt-2 border-t border-stone-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div>
+<span class="text-xs text-stone-500 block uppercase tracking-wide">Investment</span>
+<div class="flex items-baseline gap-2">
+<span class="text-3xl font-bold font-prestige-title text-[#17241A]">$60.00</span>
+<span class="text-xs text-stone-500">USD • Free Concierge Shipping</span>
+</div>
+</div>
+<!-- Duo Case Offer -->
+<div class="bg-[#FAF7F0] border border-[#C5A059]/60 px-3 py-1.5 rounded text-xs text-[#1F3025]">
+<span class="font-bold text-[#99732B]">Duo Reserve Case (6 Liters):</span> $110.00
+                </div>
+</div>
+<!-- CTAs -->
+<div class="flex flex-col sm:flex-row items-stretch gap-3">
+<a class="flex-1 inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-[#1F3025] hover:bg-[#C5A059] text-white font-semibold text-xs uppercase tracking-widest rounded transition duration-200 shadow-md" href="https://wa.me/13016594136?text=Hello%20John%20Neata,%20I%20would%20like%20to%20order%20the%20Vivelia%203-Liter%20Brass%20Canister." rel="noopener noreferrer" target="_blank">
+<svg class="w-4 h-4 text-[#E8D49E]" fill="currentColor" viewbox="0 0 24 24">
+<path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.974.532 1.838.82 2.796.82 3.183 0 5.768-2.587 5.768-5.766.001-3.182-2.585-5.766-5.768-5.766zm-7.794 5.766c.001-4.298 3.5-7.797 7.794-7.797 4.295 0 7.794 3.499 7.794 7.797 0 4.296-3.499 7.796-7.794 7.796-1.341 0-2.613-.352-3.725-.975l-4.135 1.084 1.104-4.032c-.742-1.182-1.038-2.571-1.038-3.872z"></path>
+</svg>
+<span>Order via John Neata (+1 301-659-4136)</span>
+</a>
+<button class="px-6 py-3.5 border border-[#17241A] hover:border-[#99732B] hover:text-[#99732B] font-semibold text-xs uppercase tracking-widest rounded transition" onclick="simulateOrder('Vivelia 3-Liter Canister')">
+                  Quick Add
+                </button>
+</div>
+</div>
+</div>
+<!-- Content: Single-Grove Dark Glass 500ml (Hidden Initially) -->
+<div class="hidden grid-cols-1 lg:grid-cols-12 gap-8 items-center" id="suite-view-reserve">
+<div class="lg:col-span-6 flex justify-center">
+<div class="w-full max-w-md bg-[#0E1F14] text-[#E8D49E] rounded-xl p-8 border border-emerald-500/30 text-center shadow-xl">
+<div class="w-24 h-24 mx-auto mb-4 rounded-full bg-emerald-950 flex items-center justify-center border border-emerald-400/40">
+<svg class="w-12 h-12 text-emerald-400" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+</svg>
+</div>
+<span class="text-xs uppercase tracking-widest text-emerald-300 font-semibold block mb-2">Dark Violet Glass Bottled</span>
+<h3 class="font-prestige-title text-2xl text-white font-bold mb-3">Estate Monovarietal Koroneiki 500ml</h3>
+<p class="text-xs text-gray-300 font-light leading-relaxed mb-6">
+                  Harvested exclusively at night in Kalamata during the first week of October. Dense notes of freshly cut grass, green artichoke, and peppery oleocanthal finish.
+                </p>
+<div class="text-2xl font-bold font-prestige-title text-white mb-4">$34.00 USD</div>
+<a class="inline-block w-full py-3 bg-emerald-800 hover:bg-emerald-700 text-white text-xs font-semibold uppercase tracking-widest rounded transition" href="https://wa.me/13016594136?text=Hello%20John,%20reserve%20a%20case%20of%20500ml%20Estate%20Reserve%20EVOO.">Inquire via Concierge</a>
+</div>
+</div>
+<div class="lg:col-span-6 space-y-4">
+<span class="px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-widest bg-emerald-900 text-emerald-200 rounded">The Table Sommelier Collection</span>
+<h2 class="font-prestige-title text-3xl font-bold text-[#17241A]">Ultraviolet Obsidian Dark Glass</h2>
+<p class="text-sm text-stone-700 leading-relaxed font-light">
+                Specifically designated for luxury tablescape presentations and tasting cellars. Every bottle is individually numbered with the harvest tree quadrant in Peloponnese.
+              </p>
+<ul class="text-xs space-y-2 text-stone-600 font-medium">
+<li class="flex items-center gap-2"><span class="text-emerald-600 font-bold">✓</span> 540 mg/kg Polyphenols verified by Hellenic Food Authority</li>
+<li class="flex items-center gap-2"><span class="text-emerald-600 font-bold">✓</span> Hand-dipped beeswax seal with gold stamping</li>
+<li class="flex items-center gap-2"><span class="text-emerald-600 font-bold">✓</span> Concierge-guaranteed direct flight dispatch to North America</li>
+</ul>
+</div>
+</div>
+<!-- Content: Botanical Infused (Hidden Initially) -->
+<div class="hidden grid-cols-1 lg:grid-cols-12 gap-8 items-center" id="suite-view-botanical">
+<div class="lg:col-span-6 flex justify-center">
+<div class="w-full max-w-md bg-[#2B1B15] text-[#FAF7F0] rounded-xl p-8 border border-amber-500/40 text-center shadow-xl">
+<div class="w-24 h-24 mx-auto mb-4 rounded-full bg-amber-950/60 flex items-center justify-center border border-amber-400">
+<span class="text-3xl">🌿</span>
+</div>
+<span class="text-xs uppercase tracking-widest text-amber-300 font-semibold block mb-2">Simultaneous Stone Milling</span>
+<h3 class="font-prestige-title text-2xl text-white font-bold mb-3">Aegean Wild Rosemary &amp; Red Chili EVOO</h3>
+<p class="text-xs text-amber-100/80 font-light leading-relaxed mb-6">
+                  Hand-gathered mountain rosemary from Mount Parnon crushed simultaneously with cold ripe olives. No synthetic aromas or extracts ever used.
+                </p>
+<div class="text-2xl font-bold font-prestige-title text-amber-300 mb-4">$28.00 USD</div>
+<a class="inline-block w-full py-3 bg-amber-700 hover:bg-amber-600 text-white text-xs font-semibold uppercase tracking-widest rounded transition" href="https://wa.me/13016594136?text=Hello%20John,%20I%20wish%20to%20order%20the%20Botanical%20Infused%20Olive%20Oil.">Order Artisan Press</a>
+</div>
+</div>
+<div class="lg:col-span-6 space-y-4">
+<span class="px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-widest bg-amber-800 text-amber-100 rounded">Culinary Finish</span>
+<h2 class="font-prestige-title text-3xl font-bold text-[#17241A]">Crushed Fresh Herbs &amp; Olives Together</h2>
+<p class="text-sm text-stone-700 leading-relaxed font-light">
+                Unlike mass-market flavored oils infused after pressing, Vivelia presses wild mountain rosemary and whole sundried Aegean chilis simultaneously with the olives. The resulting essential oils bind naturally at the molecular level.
+              </p>
+</div>
+</div>
+<!-- Content: 5-Year Oak Cask Megara Aged Balsamic (Hidden Initially) -->
+<div class="hidden grid-cols-1 lg:grid-cols-12 gap-8 items-center" id="suite-view-balsamic">
+<div class="lg:col-span-6 flex justify-center">
+<div class="w-full max-w-md bg-[#230C12] text-[#FAF7F0] rounded-xl p-8 border border-rose-500/30 text-center shadow-xl">
+<div class="w-24 h-24 mx-auto mb-4 rounded-full bg-rose-950 flex items-center justify-center border border-rose-400">
+<span class="text-3xl">🍇</span>
+</div>
+<span class="text-xs uppercase tracking-widest text-rose-300 font-semibold block mb-2">5 Years in Charred Oak</span>
+<h3 class="font-prestige-title text-2xl text-white font-bold mb-3">Megara Organic Aged Balsamic</h3>
+<p class="text-xs text-rose-100/80 font-light leading-relaxed mb-6">
+                  Greek dark grape must concentrated over open fire and slowly matured in French oak and chestnut barrels in Megara, Attica.
+                </p>
+<div class="text-2xl font-bold font-prestige-title text-rose-300 mb-4">$38.00 USD</div>
+<a class="inline-block w-full py-3 bg-rose-900 hover:bg-rose-800 text-white text-xs font-semibold uppercase tracking-widest rounded transition" href="https://wa.me/13016594136?text=Hello%20John,%20I%20would%20like%20to%20secure%20the%205-Year%20Aged%20Balsamic.">Direct Cellar Dispatch</a>
+</div>
+</div>
+<div class="lg:col-span-6 space-y-4">
+<span class="px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-widest bg-[#42121E] text-rose-200 rounded">The Vinegar Cellar</span>
+<h2 class="font-prestige-title text-3xl font-bold text-[#17241A]">Slow Barrel-Aged Greek Must</h2>
+<p class="text-sm text-stone-700 leading-relaxed font-light">
+                A naturally dense, viscous vinegar with undertones of dried figs, wild honey, and toasted oak. Pairs harmoniously with the Vivelia 3L brass canister olive oil for dining experiences.
+              </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: HeroProductSuiteSwitcher -->
+<!-- BEGIN: ConciergeSpotlightJohnNeata -->
+<section class="py-16 sm:py-24 bg-[#FAF7F0] relative" id="concierge">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="bg-[#17241A] text-white rounded-2xl overflow-hidden border border-[#C5A059]/40 shadow-card-luxury">
+<div class="grid grid-cols-1 lg:grid-cols-12">
+<!-- Concierge Personal Portrait & Accents -->
+<div class="lg:col-span-5 bg-gradient-to-br from-[#121A13] to-[#203324] p-8 sm:p-12 flex flex-col justify-between border-b lg:border-b-0 lg:border-r border-[#C5A059]/30">
+<div>
+<!-- Availability Beacon -->
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/80 border border-emerald-500/40 text-emerald-300 text-xs font-semibold mb-6">
+<span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+<span>Active Now on WhatsApp • US &amp; Global Liaison</span>
+</div>
+<div class="w-20 h-20 rounded-full bg-[#C5A059]/20 border-2 border-[#C5A059] flex items-center justify-center text-3xl mb-4 font-prestige-title text-[#E8D49E]">
+                  JN
+                </div>
+<h3 class="font-prestige-title text-3xl text-white font-bold">John Neata</h3>
+<p class="text-xs uppercase tracking-widest text-[#C5A059] font-medium mt-1">Lead Client Concierge • Vivelia North America</p>
+<p class="text-xs text-stone-400 mt-0.5">Sommelier Liaison • Direct Cellar Allocation</p>
+<div class="mt-6 pt-6 border-t border-white/10 space-y-3 text-xs text-stone-300">
+<div class="flex items-center gap-3">
+<span class="text-[#C5A059] font-bold">Direct Phone:</span>
+<a class="text-white hover:text-[#E8D49E] transition font-semibold text-sm" href="tel:+13016594136">+1 (301) 659-4136</a>
+</div>
+<div class="flex items-center gap-3">
+<span class="text-[#C5A059] font-bold">Response Time:</span>
+<span class="text-white">&lt; 15 minutes (WhatsApp / Call)</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="text-[#C5A059] font-bold">Guarantees:</span>
+<span class="text-white">Zero-Dent Air Delivery • Acidity Certification</span>
+</div>
+</div>
+</div>
+<!-- Quick WhatsApp Direct CTA button -->
+<div class="mt-8">
+<a class="flex items-center justify-center gap-2 w-full py-3.5 px-4 rounded bg-[#25D366] hover:bg-[#20ba59] text-stone-950 font-bold text-xs uppercase tracking-wider transition shadow-lg" href="https://wa.me/13016594136?text=Hi%20John%20Neata,%20I%20am%20reviewing%20the%20Vivelia%20Greek%20Estate%20Olive%20Oil%20and%20would%20like%20your%20personal%20recommendation." rel="noopener noreferrer" target="_blank">
+<svg class="w-4 h-4 fill-current" viewbox="0 0 24 24">
+<path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.974.532 1.838.82 2.796.82 3.183 0 5.768-2.587 5.768-5.766.001-3.182-2.585-5.766-5.768-5.766zm-7.794 5.766c.001-4.298 3.5-7.797 7.794-7.797 4.295 0 7.794 3.499 7.794 7.797 0 4.296-3.499 7.796-7.794 7.796-1.341 0-2.613-.352-3.725-.975l-4.135 1.084 1.104-4.032c-.742-1.182-1.038-2.571-1.038-3.872z"></path>
+</svg>
+<span>Chat With John on WhatsApp</span>
+</a>
+</div>
+</div>
+<!-- Concierge Services & Inquiry Form -->
+<div class="lg:col-span-7 p-8 sm:p-12 flex flex-col justify-between">
+<div>
+<span class="text-xs uppercase font-bold tracking-widest text-[#E8D49E]">Private Client Privilege</span>
+<h4 class="font-prestige-title text-2xl sm:text-3xl text-white font-bold mt-1 mb-4">
+                  Bespoke Sommelier Consultations &amp; Estate Allocations
+                </h4>
+<p class="text-xs sm:text-sm text-stone-300 font-light leading-relaxed mb-6">
+                  Whether catering a private estate, curating Michelin-starred restaurant programs, or securing our limited 3-liter brass tin allocations, John Neata oversees every shipment directly from Greek harvest pressing to your doorstep.
+                </p>
+<!-- 3 Pillars -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+<div class="p-3 bg-white/5 rounded border border-white/10">
+<span class="text-[#C5A059] text-base block font-bold">01. Cellar Flight</span>
+<span class="text-[11px] text-stone-300">Custom sensory flight for private residences &amp; executive chefs.</span>
+</div>
+<div class="p-3 bg-white/5 rounded border border-white/10">
+<span class="text-[#C5A059] text-base block font-bold">02. Air Dispatch</span>
+<span class="text-[11px] text-stone-300">Temperature-stable transatlantic priority freight with leakproof packing.</span>
+</div>
+<div class="p-3 bg-white/5 rounded border border-white/10">
+<span class="text-[#C5A059] text-base block font-bold">03. Acidity Proof</span>
+<span class="text-[11px] text-stone-300">Each batch stamped with laboratory peroxide &amp; polyphenol certificate.</span>
+</div>
+</div>
+</div>
+<!-- Quick Consultation Dispatch Bar -->
+<div class="bg-black/30 p-4 rounded-lg border border-[#C5A059]/30">
+<form class="flex flex-col sm:flex-row gap-3" onsubmit="event.preventDefault(); alert('Inquiry dispatched to John Neata. He will reach you within 15 minutes.');">
+<input class="bg-white/10 text-white placeholder-stone-400 text-xs px-4 py-3 rounded border border-white/20 focus:outline-none focus:border-[#C5A059] flex-1" placeholder="Your Name or Estate Title" required="" type="text"/>
+<input class="bg-white/10 text-white placeholder-stone-400 text-xs px-4 py-3 rounded border border-white/20 focus:outline-none focus:border-[#C5A059] flex-1" placeholder="Mobile / WhatsApp Number" required="" type="tel"/>
+<button class="px-6 py-3 bg-[#C5A059] hover:bg-[#99732B] text-[#17241A] font-bold text-xs uppercase tracking-wider rounded transition whitespace-nowrap" type="submit">
+                    Request Call
+                  </button>
+</form>
+<div class="text-[10px] text-stone-400 mt-2 flex items-center justify-between">
+<span>Direct phone line: +1 (301) 659-4136</span>
+<span>Confidentiality Guaranteed</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: ConciergeSpotlightJohnNeata -->
+<!-- BEGIN: LaboratoryScienceStandards -->
+<section class="py-16 bg-[#F4EEE0] border-y border-[#C5A059]/25" id="science">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col md:flex-row items-baseline justify-between mb-10 pb-4 border-b border-[#C5A059]/30">
+<div>
+<span class="text-xs uppercase tracking-widest text-[#99732B] font-bold">Hellenic Chemical Standards</span>
+<h2 class="font-prestige-title text-3xl font-bold text-[#17241A]">The Physicochemical Benchmark</h2>
+</div>
+<p class="text-xs text-stone-600 max-w-md font-light mt-2 md:mt-0">
+            Certified analysis directly from the back of the Vivelia 3L Tin • Harvest 2024
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<!-- Card 1 -->
+<div class="bg-white p-6 rounded-lg border border-stone-200 shadow-sm">
+<span class="text-[11px] uppercase font-bold tracking-wider text-stone-500">Free Acidity (Oleic)</span>
+<div class="text-3xl font-prestige-title font-bold text-[#17241A] my-2">≤ 0.28%</div>
+<p class="text-xs text-stone-600 font-light leading-relaxed">
+              Standard extra virgin olive oil allows up to 0.8%. Vivelia’s 0.28% guarantees hand-selected fruit with zero tree-ground degradation.
+            </p>
+</div>
+<!-- Card 2 -->
+<div class="bg-white p-6 rounded-lg border border-stone-200 shadow-sm">
+<span class="text-[11px] uppercase font-bold tracking-wider text-stone-500">Peroxide Value</span>
+<div class="text-3xl font-prestige-title font-bold text-[#99732B] my-2">&lt; 6.4 meq</div>
+<p class="text-xs text-stone-600 font-light leading-relaxed">
+              EU limit allows 20 meq O2/kg. Our low peroxide value confirms pristine oxygen-free tin encapsulation immediately post-centrifuge.
+            </p>
+</div>
+<!-- Card 3 -->
+<div class="bg-white p-6 rounded-lg border border-stone-200 shadow-sm">
+<span class="text-[11px] uppercase font-bold tracking-wider text-stone-500">Polyphenol Concentration</span>
+<div class="text-3xl font-prestige-title font-bold text-[#17241A] my-2">485 mg/kg</div>
+<p class="text-xs text-stone-600 font-light leading-relaxed">
+              Qualifies under EU Health Claim Regulation 432/2012 for the protection of blood lipids from oxidative stress.
+            </p>
+</div>
+<!-- Card 4 -->
+<div class="bg-white p-6 rounded-lg border border-stone-200 shadow-sm">
+<span class="text-[11px] uppercase font-bold tracking-wider text-stone-500">K232 / K270 Spectrometry</span>
+<div class="text-3xl font-prestige-title font-bold text-emerald-800 my-2">1.62 / 0.14</div>
+<p class="text-xs text-stone-600 font-light leading-relaxed">
+              Optical density confirming 100% pure cold press without refined seed oil contamination or high-temperature blending.
+            </p>
+</div>
+</div>
+<!-- Real Nutrition Breakdown from Uploaded Canisters -->
+<div class="mt-8 bg-[#FAF7F0] p-6 rounded-lg border border-[#C5A059]/30 flex flex-col lg:flex-row items-center justify-between gap-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-[#1F3025] text-[#C5A059] flex items-center justify-center text-xl font-bold">
+              ✓
+            </div>
+<div>
+<h4 class="font-prestige-title text-base font-bold text-[#17241A]">Nutrition Declaration Verified (100ml / 10g serving)</h4>
+<p class="text-xs text-stone-600">Energy: 3,449 kJ / 824 kcal • Monounsaturates: 72.4g • Polyunsaturates: 6.4g • Cholesterol &amp; Salt: 0.0g</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<a class="text-xs font-semibold uppercase tracking-wider text-[#99732B] hover:text-[#17241A] transition underline" href="https://wa.me/13016594136?text=John,%20please%20send%20the%20complete%20chemical%20laboratory%20analysis%20certificate." rel="noopener noreferrer" target="_blank">
+              Request Full Lab PDF from John Neata →
+            </a>
+</div>
+</div>
+</div>
+</section>
+<!-- END: LaboratoryScienceStandards -->
+<!-- BEGIN: FullThemedProductGrid -->
+<section class="py-16 sm:py-24 bg-[#FAF7F0]" id="collection">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-2xl mx-auto mb-14">
+<span class="text-xs uppercase tracking-widest text-[#99732B] font-bold">Hellenic Harvest Portfolio</span>
+<h2 class="font-prestige-title text-3xl sm:text-4xl text-[#17241A] font-bold mt-1">The 4 Distinct Product Houses</h2>
+<p class="text-xs sm:text-sm text-stone-600 font-light mt-3">
+            Each product reflects its bespoke terroir, certified packaging safeguards, and custom chromatic identity.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Card 1: 3L Brass Tin (Theme: Royal Greek Forest & Gold) -->
+<div class="bg-white rounded-xl overflow-hidden border-2 border-[#C5A059] shadow-lg flex flex-col justify-between hover:shadow-gold-glow transition duration-300">
+<div class="p-4 bg-gradient-to-r from-[#17241A] to-[#25392B] text-white flex justify-between items-center">
+<span class="text-[10px] font-bold uppercase tracking-widest text-[#E8D49E]">Signature Brass</span>
+<span class="text-[10px] bg-[#C5A059] text-[#17241A] px-2 py-0.5 rounded font-bold">3 Liters</span>
+</div>
+<div class="p-4 flex items-center justify-center bg-stone-100/50 h-56 overflow-hidden">
+<img alt="Vivelia 3L Canister Studio View" class="h-full object-contain hover:scale-105 transition duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTPH8f_yin3Q5cN-eqQCEEMzg-jmzuim99xtDlLF2GA1PqP8vZztaOzFI7G3w8xRwsWN8xRZGGISFqiNjk8EwPKVTORaSbVSm_7ZlSvB7TWLCZOIPOlYml-Zdq2a9W9PjYV_gHJ9A727exCxr5P0SzRyrjuw--hTb7ljJl066qJCa_0j0Jj-eBziIqVR1gofmfkADHJa9ApGEt3e8q4Y-hDCXdDRaXneQgTAONJP36i0juJ4HhMCJyUeOGllxQDroO0fc"/>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between space-y-4">
+<div>
+<h3 class="font-prestige-title text-lg font-bold text-[#17241A]">Vivelia 3L Brass Tin</h3>
+<p class="text-xs text-stone-500 font-light mt-1">Peloponnese Cold Extraction • Acidity &lt; 0.28% • Retractable Spout</p>
+</div>
+<div class="pt-3 border-t border-stone-200 flex items-center justify-between">
+<div>
+<span class="text-xl font-bold font-prestige-title text-[#17241A]">$60.00</span>
+</div>
+<a class="text-xs font-bold uppercase tracking-wider bg-[#1F3025] hover:bg-[#C5A059] text-white px-3.5 py-2 rounded transition" href="https://wa.me/13016594136?text=Hi%20John,%20I%20want%20the%203L%20Vivelia%20Canister.">
+                  Order
+                </a>
+</div>
+</div>
+</div>
+<!-- Card 2: Estate 500ml (Theme: Emerald Obsidian) -->
+<div class="bg-white rounded-xl overflow-hidden border-2 border-emerald-800/40 shadow-sm flex flex-col justify-between hover:shadow-lg transition duration-300">
+<div class="p-4 bg-gradient-to-r from-[#0E1F14] to-[#152B1C] text-white flex justify-between items-center">
+<span class="text-[10px] font-bold uppercase tracking-widest text-emerald-300">Estate Monovarietal</span>
+<span class="text-[10px] bg-emerald-700 text-white px-2 py-0.5 rounded font-bold">500 ml</span>
+</div>
+<div class="p-4 flex flex-col items-center justify-center bg-emerald-950/5 h-56 text-emerald-900">
+<div class="w-16 h-44 rounded-full bg-emerald-950 flex items-center justify-center text-emerald-300 font-prestige-title text-sm border-2 border-emerald-600/40 shadow-md">
+                500ml
+              </div>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between space-y-4">
+<div>
+<h3 class="font-prestige-title text-lg font-bold text-[#17241A]">Obsidian Dark Glass</h3>
+<p class="text-xs text-stone-500 font-light mt-1">Single-grove October harvest Koroneiki • High Oleocanthal finish</p>
+</div>
+<div class="pt-3 border-t border-stone-200 flex items-center justify-between">
+<div>
+<span class="text-xl font-bold font-prestige-title text-[#17241A]">$34.00</span>
+</div>
+<a class="text-xs font-bold uppercase tracking-wider bg-emerald-900 hover:bg-emerald-700 text-white px-3.5 py-2 rounded transition" href="https://wa.me/13016594136?text=Hi%20John,%20I%20want%20the%20500ml%20Dark%20Glass%20Reserve.">
+                  Order
+                </a>
+</div>
+</div>
+</div>
+<!-- Card 3: Botanical Infused (Theme: Terracotta Amber) -->
+<div class="bg-white rounded-xl overflow-hidden border-2 border-amber-700/40 shadow-sm flex flex-col justify-between hover:shadow-lg transition duration-300">
+<div class="p-4 bg-gradient-to-r from-[#2E1A11] to-[#452718] text-white flex justify-between items-center">
+<span class="text-[10px] font-bold uppercase tracking-widest text-amber-300">Wild Mountain Herbs</span>
+<span class="text-[10px] bg-amber-700 text-white px-2 py-0.5 rounded font-bold">250 ml</span>
+</div>
+<div class="p-4 flex flex-col items-center justify-center bg-amber-900/5 h-56 text-amber-800">
+<div class="w-14 h-40 rounded-xl bg-amber-900/80 flex items-center justify-center text-amber-200 font-prestige-title text-xs border border-amber-500 shadow-md">
+                Rosemary
+              </div>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between space-y-4">
+<div>
+<h3 class="font-prestige-title text-lg font-bold text-[#17241A]">Rosemary &amp; Chili Press</h3>
+<p class="text-xs text-stone-500 font-light mt-1">Crushed simultaneously with olives • Intense Mediterranean aroma</p>
+</div>
+<div class="pt-3 border-t border-stone-200 flex items-center justify-between">
+<div>
+<span class="text-xl font-bold font-prestige-title text-[#17241A]">$28.00</span>
+</div>
+<a class="text-xs font-bold uppercase tracking-wider bg-amber-900 hover:bg-amber-700 text-white px-3.5 py-2 rounded transition" href="https://wa.me/13016594136?text=Hi%20John,%20I%20want%20the%20Rosemary%20Chili%20EVOO.">
+                  Order
+                </a>
+</div>
+</div>
+</div>
+<!-- Card 4: 5-Year Cask Balsamic (Theme: Burgundy & Brass) -->
+<div class="bg-white rounded-xl overflow-hidden border-2 border-rose-900/40 shadow-sm flex flex-col justify-between hover:shadow-lg transition duration-300">
+<div class="p-4 bg-gradient-to-r from-[#240A10] to-[#3B111B] text-white flex justify-between items-center">
+<span class="text-[10px] font-bold uppercase tracking-widest text-rose-300">Oak Cask Aged</span>
+<span class="text-[10px] bg-rose-900 text-white px-2 py-0.5 rounded font-bold">250 ml</span>
+</div>
+<div class="p-4 flex flex-col items-center justify-center bg-rose-950/5 h-56 text-rose-900">
+<div class="w-14 h-40 rounded-full bg-[#3B111B] flex items-center justify-center text-rose-200 font-prestige-title text-xs border border-rose-400 shadow-md">
+                5-Yr Balsamic
+              </div>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between space-y-4">
+<div>
+<h3 class="font-prestige-title text-lg font-bold text-[#17241A]">Megara 5-Yr Balsamic</h3>
+<p class="text-xs text-stone-500 font-light mt-1">Slow matured in Greek oak barrels • Dense, fig-syrup complexity</p>
+</div>
+<div class="pt-3 border-t border-stone-200 flex items-center justify-between">
+<div>
+<span class="text-xl font-bold font-prestige-title text-[#17241A]">$38.00</span>
+</div>
+<a class="text-xs font-bold uppercase tracking-wider bg-rose-950 hover:bg-rose-800 text-white px-3.5 py-2 rounded transition" href="https://wa.me/13016594136?text=Hi%20John,%20I%20want%20the%205-Year%20Aged%20Megara%20Balsamic.">
+                  Order
+                </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: FullThemedProductGrid -->
+<!-- BEGIN: WholesaleAndMichelinSection -->
+<section class="py-16 bg-[#17241A] text-white border-t border-[#C5A059]/30">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-8">
+<div class="max-w-2xl">
+<span class="text-xs uppercase tracking-widest text-[#C5A059] font-bold">Michelin Star &amp; Hospitality Services</span>
+<h2 class="font-prestige-title text-2xl sm:text-3xl text-white font-bold mt-1">
+            Bulk Case Dispatch &amp; Culinary Accounts
+          </h2>
+<p class="text-xs sm:text-sm text-stone-300 font-light mt-2 leading-relaxed">
+            Direct estate container imports, palette orders, and customized tins for fine dining institutions throughout North America, Europe, and the Middle East overseen personally by concierge John Neata.
+          </p>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
+<a class="px-6 py-3.5 border border-[#C5A059] text-[#E8D49E] hover:bg-[#C5A059] hover:text-[#17241A] text-xs font-semibold uppercase tracking-wider rounded transition text-center whitespace-nowrap" href="tel:+13016594136">
+            Call +1 (301) 659-4136
+          </a>
+<a class="px-6 py-3.5 bg-[#C5A059] hover:bg-[#99732B] text-[#17241A] font-bold text-xs uppercase tracking-wider rounded transition text-center whitespace-nowrap" href="https://wa.me/13016594136?text=Hello%20John,%20I%20am%20inquiring%20about%20Wholesale%20Michelin%20Procurement%20for%20Vivelia." rel="noopener noreferrer" target="_blank">
+            WhatsApp Concierge
+          </a>
+</div>
+</div>
+</section>
+<!-- END: WholesaleAndMichelinSection -->
+</main>
+<!-- BEGIN: MainFooter -->
+<footer class="bg-[#101712] text-white border-t border-white/10 pt-16 pb-12">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+<!-- Brand Info -->
+<div class="space-y-4">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-[#C5A059] flex items-center justify-center text-[#17241A] font-bold">V</div>
+<span class="font-prestige-title text-xl font-bold tracking-wider">VIVELIA</span>
+</div>
+<p class="text-xs text-stone-400 font-light leading-relaxed">
+            Hellenic Harvest &amp; Estate. Pure Extra Virgin Olive Oil harvested in Megara &amp; Peloponnese, Greece. Guaranteed chemical purity &lt; 0.28% acidity.
+          </p>
+</div>
+<!-- Terroir & Science -->
+<div class="space-y-2">
+<h5 class="text-xs uppercase font-bold tracking-widest text-[#C5A059]">Terroir &amp; Lab</h5>
+<ul class="text-xs text-stone-400 space-y-1.5 font-light">
+<li>Single-Grove Peloponnese Soils</li>
+<li>Cold Extraction under 24°C</li>
+<li>Dark Brass Tin Photolysis Barrier</li>
+<li>Acidity Analysis &lt; 0.28%</li>
+</ul>
+</div>
+<!-- Sommelier Concierge Details -->
+<div class="space-y-2">
+<h5 class="text-xs uppercase font-bold tracking-widest text-[#C5A059]">Private Concierge</h5>
+<p class="text-xs text-stone-300 font-medium">John Neata • Executive Liaison</p>
+<p class="text-xs text-stone-400">Direct Phone: +1 (301) 659-4136</p>
+<p class="text-xs text-stone-400">WhatsApp: Active for North America &amp; Global Inquiries</p>
+<p class="text-xs text-stone-400">Zero-Leak Shipping Guarantee</p>
+</div>
+<!-- Languages & Accents -->
+<div class="space-y-2">
+<h5 class="text-xs uppercase font-bold tracking-widest text-[#C5A059]">Global Presence</h5>
+<p class="text-xs text-stone-400 font-light">Athens • Kalamata • Megara • Washington DC • New York</p>
+<div class="pt-2">
+<span class="text-[11px] text-stone-400 block">Languages: English / Español / Ελληνικά</span>
+</div>
+</div>
+</div>
+<div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-500 font-light">
+<p>© 2024 Vivelia Hellenic Harvest &amp; Estate. All rights reserved. Private client management by John Neata.</p>
+<div class="flex space-x-6">
+<a class="hover:text-stone-300 transition" href="#">Acidity Certification</a>
+<a class="hover:text-stone-300 transition" href="#">Shipping Guarantee</a>
+<a class="hover:text-stone-300 transition" href="#">Contact John Neata</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- END: MainFooter -->
+<!-- BEGIN: StickyFloatingWhatsAppConcierge -->
+<aside class="fixed bottom-6 right-6 z-50 flex items-center" data-purpose="sticky-concierge-widget">
+<a class="group flex items-center gap-3 bg-[#17241A] hover:bg-[#1f3025] text-white p-2.5 sm:px-4 sm:py-3 rounded-full border-2 border-[#C5A059] shadow-2xl transition duration-300 hover:scale-105" href="https://wa.me/13016594136?text=Hello%20John%20Neata,%20I%20am%20on%20the%20Vivelia%20flagship%20site%20and%20need%20concierge%20assistance." rel="noopener noreferrer" target="_blank">
+<!-- Pulsing WhatsApp Icon -->
+<div class="relative w-8 h-8 rounded-full bg-[#25D366] flex items-center justify-center text-stone-950 flex-shrink-0 shadow-inner">
+<svg class="w-4 h-4 fill-current" viewbox="0 0 24 24">
+<path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.974.532 1.838.82 2.796.82 3.183 0 5.768-2.587 5.768-5.766.001-3.182-2.585-5.766-5.768-5.766zm-7.794 5.766c.001-4.298 3.5-7.797 7.794-7.797 4.295 0 7.794 3.499 7.794 7.797 0 4.296-3.499 7.796-7.794 7.796-1.341 0-2.613-.352-3.725-.975l-4.135 1.084 1.104-4.032c-.742-1.182-1.038-2.571-1.038-3.872z"></path>
+</svg>
+<span class="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+</div>
+<!-- Label -->
+<div class="hidden sm:flex flex-col text-left pr-1">
+<span class="text-[10px] uppercase tracking-wider text-[#E8D49E] font-semibold">Concierge John Neata</span>
+<span class="text-xs font-bold text-white leading-none">+1 (301) 659-4136</span>
+</div>
+</a>
+</aside>
+<!-- END: StickyFloatingWhatsAppConcierge -->
+<!-- BEGIN: InteractiveScripts -->
+<script data-purpose="product-suite-switcher-logic">
+    // Interactive switching between the 4 suites with custom color identity updates
+    function switchSuiteProduct(productId) {
+      const views = ['canister', 'reserve', 'botanical', 'balsamic'];
+      const canvas = document.getElementById('product-suite-canvas');
+
+      views.forEach(id => {
+        const viewEl = document.getElementById(`suite-view-${id}`);
+        const btnEl = document.getElementById(`tab-btn-${id}`);
+        
+        if (id === productId) {
+          // Show active view
+          viewEl.classList.remove('hidden');
+          viewEl.classList.add('grid');
+          
+          // Style active tab
+          btnEl.classList.add('border-[#C5A059]', 'bg-[#C5A059]/20', 'text-white', 'shadow-sm');
+          btnEl.classList.remove('border-transparent', 'text-gray-400');
+          btnEl.setAttribute('aria-selected', 'true');
+        } else {
+          // Hide others
+          viewEl.classList.add('hidden');
+          viewEl.classList.remove('grid');
+          
+          // Reset inactive tabs
+          btnEl.classList.remove('border-[#C5A059]', 'bg-[#C5A059]/20', 'text-white', 'shadow-sm');
+          btnEl.classList.add('border-transparent', 'text-gray-400');
+          btnEl.setAttribute('aria-selected', 'false');
+        }
+      });
+
+      // Shifting background border nuance based on selected product theme
+      if (productId === 'canister') {
+        canvas.style.borderColor = 'rgba(197, 160, 89, 0.4)';
+      } else if (productId === 'reserve') {
+        canvas.style.borderColor = 'rgba(16, 185, 129, 0.4)';
+      } else if (productId === 'botanical') {
+        canvas.style.borderColor = 'rgba(217, 119, 6, 0.4)';
+      } else if (productId === 'balsamic') {
+        canvas.style.borderColor = 'rgba(244, 63, 94, 0.4)';
+      }
+    }
+
+    // Thumbnail switcher for the 3L canister main view
+    function changeCanisterImage(imageSrc, thumbnailButton) {
+      const mainImg = document.getElementById('canister-main-image');
+      if (mainImg) {
+        mainImg.src = imageSrc;
+      }
+      
+      const allThumbs = document.querySelectorAll('.canister-thumb');
+      allThumbs.forEach(btn => {
+        btn.classList.remove('ring-2', 'ring-[#C5A059]', 'opacity-100');
+        btn.classList.add('opacity-60');
+      });
+
+      thumbnailButton.classList.remove('opacity-60');
+      thumbnailButton.classList.add('ring-2', 'ring-[#C5A059]', 'opacity-100');
+    }
+
+    // Cart / order notification simulator
+    function simulateOrder(itemName) {
+      alert(`${itemName} added to private allocation. Opening direct chat with John Neata (+1 301-659-4136) to confirm delivery address.`);
+      window.open('https://wa.me/13016594136?text=Hi%20John,%20I%20just%20added%20the%20' + encodeURIComponent(itemName) + '%20to%20my%20order.', '_blank');
+    }
+  </script>
+<!-- END: InteractiveScripts -->
+</body></html>
