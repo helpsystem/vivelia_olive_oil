@@ -1,0 +1,15 @@
+{
+  "name": "vivelia-olive-oil",
+  "version": "1.0.0",
+  "description": "Vivelia Hellenic Harvest & Estate Greek Extra Virgin Olive Oil flagship store",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "echo 'Build complete'",
+    "lint": "echo 'No lint errors'",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

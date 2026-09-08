@@ -1,0 +1,8 @@
+{
+  "name": "Vivelia Greek Extra Virgin Olive Oil",
+  "description": "Vivelia Hellenic Harvest & Estate Greek Extra Virgin Olive Oil flagship store with single-origin Peloponnese harvest, ultra-low acidity bio-potency, and direct sommelier concierge.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
