@@ -1,0 +1,134 @@
+const fs = require('fs');
+let html = fs.readFileSync('index.html', 'utf8');
+
+// Find the storeProducts array and replace it
+const productsRegex = /window\.storeProducts = \[([\s\S]*?)\];\s*window\.currentCatalogFilter = 'all';/;
+const match = html.match(productsRegex);
+
+if (match) {
+  // we'll just reconstruct the array without the watermelon/honey and the empty image one
+  let newProducts = `window.storeProducts = [
+      {
+        id: "vivelia-3l",
+        name: "Vivelia Greek EVOO 3L Tin",
+        name_es: "Aceite de Oliva Virgen Extra Vivelia (Lata 3L)",
+        origin: "PELOPONNESE • KORONEIKI & MEGARA",
+        categories: ["gourmet", "direct-imports"],
+        badge: "Available Now",
+        badge_es: "Disponible Ahora",
+        badgeType: "available",
+        cornerBadge: "Flagship 3L Tin",
+        cornerBadge_es: "Lata Insignia 3L",
+        price: 60,
+        priceDisplay: "$60",
+        unitDisplay: "/ 3L Can",
+        unitDisplay_es: "/ Lata 3L",
+        bundleNote: "or 2 for $110 (Save $10)",
+        bundleNote_es: "o 2 por $110 (Ahorre $10)",
+        description: "First mechanical cold extraction under 26°C, acidity <0.8%, multi-award NYIOOC & London IOOC winner. Sealed in a light-shielding 3-Liter canister containing ~459 servings.",
+        description_es: "Primera extracción mecánica en frío a <26°C, acidez <0.8%, galardonado en NYIOOC y Londres. Envasado en lata protectora UV de 3L con ~459 porciones culinarias.",
+        image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCJR9HZ1_CuypdEqf-I6p1ZRcy6Ypa1YE5LYQCfiyUGxq1dlHfQhqHymZtlozY3umHJjn1m8TPb6Tf048WMIO-klUDJS3Y-e5z8cpyYbUEHOBJupUyPqJ5SSMTP_9vFYQgfbYZgMJvM5-2C_Ka7p12r8fzq_xUl-JfjNQ3FZlz1utLhLsPMih9k4WSQA9rMC_0zvoUfl-cwj8Iau9UcVtTY52xap6_BSSFWJbPP-KuglY6dYezJY8eWww",
+        alt: "Vivelia 3L Tin Can of Greek extra virgin olive oil displayed next to a ceramic dipping bowl of glowing green-gold olive oil",
+        stockNote: "14°C Warehouse Stock • Dispatched Today",
+        stockNote_es: "Stock Almacén 14°C • Despacho Hoy",
+        inStockLabel: "In Stock",
+        inStockLabel_es: "En Stock",
+        actionType: "order",
+        orderPack: "duo",
+        zellePrice: 110,
+        zelleTitle: "Vivelia 3L Tin (2 Cans Bundle)"
+      },
+      {
+        id: "kalamata-olives",
+        name: "Authentic Greek Kalamata Olives",
+        name_es: "Aceitunas Kalamata Griegas Auténticas",
+        origin: "CURED IN EVOO & WINE VINEGAR • 370G",
+        categories: ["gourmet", "coming-soon", "direct-imports"],
+        badge: "Coming Soon / In Transit",
+        badge_es: "Próximamente / En Tránsito",
+        badgeType: "transit",
+        cornerBadge: "Cured in EVOO",
+        cornerBadge_es: "Curadas en AOVE",
+        price: 16,
+        priceDisplay: "$16",
+        unitDisplay: "/ 370g Jar",
+        unitDisplay_es: "/ Frasco 370g",
+        bundleNote: "Direct Harvest Vintage Allocation",
+        bundleNote_es: "Asignación de Cosecha Directa",
+        description: "Authentic PDO Kalamata purple olives hand-harvested from ancient Peloponnese trees. Naturally cured in sea salt brine, infused with red wine vinegar, and bathed in rich Vivelia extra virgin olive oil marinade.",
+        description_es: "Auténticas aceitunas Kalamata DOP recolectadas a mano. Curadas en salmuera marina natural, con vinagre de vino tinto y marinadas en AOVE Vivelia virgen extra con orégano silvestre.",
+        image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBM-FFoQQnu8KG0l4FnUTo483ii8V9YqR9Jcm-Fhagzf5vnKqYkgL8-HbybqVE-f5u32qezicR81i2EJIBSSp9yyRDmg9-jI1HDafHDpzk9M_nipXNpWnpzugJ7j9ZFkCNMkaW99egCog5xMkQmugMw71ApXoSFQyojk-Yf0ODxbj9p9i8bxMWIa5t6nCbFQKaj_cz2iJDqJLsezqIJksnsQIAR7G0bwUNcu9S2ebHPnP2Uhd744MklrA",
+        alt: "Authentic Greek Kalamata Olives cured in extra virgin olive oil and red wine vinegar in a glass jar with fresh herbs",
+        stockNote: "Container En Route to Maryland",
+        stockNote_es: "Contenedor en Ruta a Maryland",
+        inStockLabel: "In Transit",
+        inStockLabel_es: "En Tránsito",
+        actionType: "whatsapp_notify",
+        whatsappUrl: "https://wa.me/13016594136?text=Hi%20John,%20please%20notify%20me%20when%20the%20Authentic%20Greek%20Kalamata%20Olives%20(cured%20in%20EVOO%20%26%20wine%20vinegar)%20arrive%20at%20the%20warehouse!"
+      },
+      {
+        id: "aged-balsamic",
+        name: "Aged Balsamic Vinegar of Megara (250ml)",
+        name_es: "Vinagre Balsámico Añejado de Mégara (250ml)",
+        origin: "AGED BALSAMIC OF MEGARA",
+        categories: ["gourmet", "direct-imports"],
+        badge: "Available Now",
+        badge_es: "Disponible Ahora",
+        badgeType: "available",
+        cornerBadge: "5-Year Cask Aged",
+        cornerBadge_es: "5 Años en Barrica",
+        price: 18,
+        priceDisplay: "$18",
+        unitDisplay: "250ml carafe",
+        unitDisplay_es: "Frasco 250ml",
+        bundleNote: "Greek Grape Must Reduction",
+        bundleNote_es: "Mosto Concentrado de Uva Griega",
+        description: "Matured in oak casks from reduced Greek grape must. Dense, velvety sweetness balanced by complex woody and dried fig aromas.",
+        description_es: "Envejecido en barricas de roble a partir de mosto de uva griega reducida. Dulzor denso y aterciopelado equilibrado con aromas a higo seco.",
+        image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBxq6Fcl_DQsYJhtWrJs7r9C6kRkcPLe5wDKNJJ-iZMj3uAu2vFej3yk1Hz-2ZRBlDyvPiRbizXJPbddeZnh7HYcrj_yu3_0S5Z4w68iScYdJgyVdl1_6GYDpEz500uIRJiav7Vd_d44iOdjl5QI2SLlmqVtRZMHniDPDhb-VXLqsIrcvbIJIgHO6PrLqoQz6DkgJm_Mj35FVyA6FccwzgOiWqcUj4BrCY21B9DPmA5C1UFwaBhSl5gNw",
+        alt: "5-Year aged Greek balsamic vinegar in glass bottle",
+        stockNote: "Stock: 19 bottles",
+        stockNote_es: "Stock: 19 botellas",
+        inStockLabel: "In Stock",
+        inStockLabel_es: "En Stock",
+        actionType: "cart",
+        zellePrice: 18,
+        zelleTitle: "Aged Balsamic Vinegar 5-Year Cask"
+      },
+      {
+        id: "connoisseur-set",
+        name: "Luxury Mediterranean Connoisseur Set",
+        name_es: "Cofre Culinario Connoisseur Mediterráneo",
+        origin: "LUXURY EPICUREAN GIFT SET",
+        categories: ["gourmet", "direct-imports"],
+        badge: "Available Now",
+        badge_es: "Disponible Ahora",
+        badgeType: "available",
+        cornerBadge: "Connoisseur Chest",
+        cornerBadge_es: "Cofre de Regalo",
+        price: 98,
+        priceDisplay: "$98",
+        unitDisplay: "Includes courier delivery",
+        unitDisplay_es: "Envío courier incluido",
+        bundleNote: "Curated Tasting Vault",
+        bundleNote_es: "Selección de Degustación",
+        description: "Contains 3L Tin Can + Organic Kalamata Olives + 5-Year Aged Balsamic + Handcrafted Olive Wood Spoon in a wooden presentation box.",
+        description_es: "Incluye 1 lata Vivelia 3L + Aceitunas Kalamata + Balsámico 5 años + Cuchara de olivo artesanal en caja de madera de regalo.",
+        image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAet1GAtnPgffSlqsqugzC-Z3NX9mXKgSqtjR6i9ODf15v_6O6nPed8tqugMw7IQW8_bEjQgd_-cHZO-6bVIhjHC-FrS0Q17vHgdko1gu-Ng7NSDupVJz2iHD8S3Dvo38kdKDkSdIScwgjO7ieIvIX5a9IHj1oh8oOvQA_y9mU0rTXTx1gVhQHm2yGl_6eA4yIzy-GpJIxqYfDncThWtf3IkXSpmrYrb-CTI4IFh2ldOD7r5BJUxV3tvg",
+        alt: "Luxury Mediterranean gourmet gift box open showcasing Vivelia 3L tin, olive jar, aged balsamic vinegar",
+        stockNote: "Stock: 12 sets",
+        stockNote_es: "Stock: 12 cofres",
+        inStockLabel: "In Stock",
+        inStockLabel_es: "En Stock",
+        actionType: "cart",
+        zellePrice: 98,
+        zelleTitle: "Luxury Mediterranean Connoisseur Set"
+      }
+    ];
+    window.currentCatalogFilter = 'all';`;
+  html = html.replace(productsRegex, newProducts);
+  fs.writeFileSync('index.html', html);
+  console.log('Removed fake products');
+} else {
+  console.log('Regex failed');
+}

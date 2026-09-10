@@ -1,0 +1,35 @@
+179:    </a>
+186:      </a>
+190:      </a>
+194:      </a>
+198:      </a>
+202:      </a>
+225:      </a>
+236:    <a class="text-sm font-label-md font-semibold py-1.5 px-3 rounded-lg hover:bg-surface-container" href="#signature-product" onclick="document.getElementById('mobile-nav-drawer').classList.add('hidden')" data-i18n="nav_featured_product">Featured Product</a>
+237:    <a class="text-sm font-label-md font-semibold py-1.5 px-3 rounded-lg hover:bg-surface-container" href="#full-catalog" onclick="document.getElementById('mobile-nav-drawer').classList.add('hidden')" data-i18n="nav_catalog">Catalog</a>
+238:    <a class="text-sm font-label-md font-semibold py-1.5 px-3 rounded-lg hover:bg-surface-container" href="#zelle-quick-widget" onclick="document.getElementById('mobile-nav-drawer').classList.add('hidden')" data-i18n="nav_zelle_payment">Zelle Payment</a>
+239:    <a class="text-sm font-label-md font-semibold py-1.5 px-3 rounded-lg hover:bg-surface-container" href="#curator-spotlight" onclick="document.getElementById('mobile-nav-drawer').classList.add('hidden')" data-i18n="nav_about_john">About John</a>
+240:    <a class="text-sm font-label-md font-semibold py-1.5 px-3 rounded-lg bg-[#D4AF37]/15 text-[#775a19]" href="#order-form" onclick="document.getElementById('mobile-nav-drawer').classList.add('hidden')" data-i18n="nav_order_form">Order Form</a>
+248:      </a>
+355:          </a>
+448:              </a>
+740:      </a>
+763:</a>
+905:              </a>
+954:              </a>
+1146:</a>
+1150:</a>
+1178:<div class="flex flex-col sm:flex-row items-center gap-3 shrink-0"><button class="w-full sm:w-auto px-7 py-3.5 bg-secondary-fixed text-on-secondary-fixed font-label-caps text-xs tracking-wider uppercase rounded-xl hover:bg-secondary-fixed-dim transition-all shadow-md flex items-center justify-center gap-2 whitespace-nowrap font-bold" onclick="toggleCustomOrderModal(true)" type="button"><span class="material-symbols-outlined text-[20px]">post_add</span>Request B2B Quote</button><a class="w-full sm:w-auto px-6 py-3.5 bg-tertiary-container hover:bg-surface-container-high/20 border border-secondary-fixed/40 text-surface-bright font-label-caps text-xs tracking-wider uppercase rounded-xl transition-all shadow-sm flex items-center justify-center gap-2 whitespace-nowrap font-bold" href="https://wa.me/13016594136" target="_blank"><span class="material-symbols-outlined text-[18px] text-tertiary-fixed">chat</span>WhatsApp John Neata</a></div>
+1501:            </a>
+1586:              </a>
+2030:</a>
+2122:</a>
+2136:</a>
+2176:<li><a class="hover:text-primary transition-colors" href="#signature-product">Extra Virgin Olive Oils</a></li>
+2177:<li><a class="hover:text-primary transition-colors" href="#curator-spotlight">Curator Standard</a></li>
+2178:<li><a class="hover:text-primary transition-colors" href="#lab-standards">Batch Laboratory Analyses</a></li>
+2179:<li><a class="hover:text-primary transition-colors" href="#why-vivelia">Greek P.D.O. Certifications</a></li>
+2180:<li><a class="hover:text-primary transition-colors" href="#culinary-guide">Hellenic Gastronomy Guide</a></li>
+2181:<li><a class="hover:text-primary transition-colors" href="#wholesale-section">Trade &amp; Sommelier B2B</a></li>
+2201:</a>
+3352:              </a>
